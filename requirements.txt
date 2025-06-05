@@ -1,10 +1,19 @@
+# Use PyTorch's official index for reliable CPU builds
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Common numerical and utility libraries
+numpy<2.0 # Pin numpy version to avoid potential issues with TF 2.16
+pandas
+PyYAML==6.0.1
+tqdm
+
 # Streamlit and core dependencies
-streamlit==1.45.1 # Or your preferred Streamlit version
-Pillow==9.5.0
+streamlit
+Pillow # Use the latest version, which fixes the build error
 requests # For downloading the model
 
-# PyTorch (CPU versions for deployment)
-torch==2.0.1+cpu
+# PyTorch (versions from your list, installed from the CPU index)
+torch==2.0.1
 torchvision==0.15.2
 torchaudio==2.0.2
 
@@ -15,16 +24,14 @@ safetensors==0.5.3
 tokenizers==0.13.3
 
 # TensorFlow (for .h5 GAN models, if needed)
-tensorflow==2.19.0 # This will pull Keras, h5py, etc.
+tensorflow==2.16.1 # Using a slightly older, very stable version of TF
 
 # PyTorch Lightning (if your Stable Diffusion code uses it)
 pytorch-lightning==2.3.0
 lightning-utilities==0.11.9
 torchmetrics==1.4.0.post0
 
-# Common numerical and utility libraries
-numpy==1.26.4
-pandas==2.2.3
-PyYAML==6.0.2
-tqdm==4.65.0
 
+
+# Add any other specific dependencies from pytorch-stable-diffusion-main/requirements.txt
+# Examples: einops, omegaconf, kornia
