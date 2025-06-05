@@ -6,7 +6,7 @@ streamlit
 Pillow
 requests
 
-# PyTorch (Using a version available for Python 3.11)
+# PyTorch (A stable version for Python 3.11)
 torch==2.3.1
 torchvision
 torchaudio
@@ -17,8 +17,8 @@ huggingface-hub
 safetensors
 tokenizers
 
-# Let pip install the latest TensorFlow compatible with Python 3.11
-tensorflow
+# Explicitly pin TensorFlow to a modern, stable version
+tensorflow==2.16.1
 
 # PyTorch Lightning
 pytorch-lightning
@@ -26,6 +26,3 @@ pytorch-lightning
 # Common numerical and utility libraries
 pandas
 PyYAML
-
-# Add any other absolutely essential libraries from pytorch-stable-diffusion-main below
-# Examples: einops, omegaconf

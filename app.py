@@ -11,6 +11,9 @@ import tensorflow as tf
 # Set page config as the FIRST Streamlit command
 st.set_page_config(layout="wide", page_title="AI Image Generation Hub")
 
+# --- ADD THIS LINE FOR DEBUGGING ---
+st.write(f"TensorFlow Version: {tf.__version__}")
+
 # --- Configuration & Path Setup ---
 BASE_DIR = Path(__file__).resolve().parent
 PYTORCH_SD_DIR = BASE_DIR / "pytorch-stable-diffusion-main"
