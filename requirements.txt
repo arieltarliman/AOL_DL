@@ -6,8 +6,8 @@ streamlit
 Pillow
 requests
 
-# PyTorch (Using a version the log says is available for Python 3.13)
-torch==2.5.0
+# PyTorch (Using a version available for Python 3.11)
+torch==2.3.1
 torchvision
 torchaudio
 
@@ -17,7 +17,7 @@ huggingface-hub
 safetensors
 tokenizers
 
-# TensorFlow
+# Let pip install the latest TensorFlow compatible with Python 3.11
 tensorflow
 
 # PyTorch Lightning
