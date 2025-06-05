@@ -6,6 +6,8 @@ import os
 import sys
 import requests # Added import
 
+st.set_page_config(layout="wide", page_title="AI Image Generation Hub")
+
 # --- Configuration & Path Setup ---
 # Assuming app.py is in the 'deploy' directory
 BASE_DIR = Path(__file__).resolve().parent
@@ -168,7 +170,6 @@ def generate_with_gan_placeholder(model_name_placeholder):
 # --- Streamlit App UI ---
 # (The rest of your UI code remains the same)
 # ... (your UI code from st.set_page_config onwards) ...
-st.set_page_config(layout="wide", page_title="AI Image Generation Hub")
 st.title("🎨 AI Image Generation Hub")
 st.markdown("Welcome! Select a model from the sidebar to start generating images.")
 
