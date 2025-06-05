@@ -6,10 +6,10 @@ streamlit
 Pillow
 requests
 
-# PyTorch (Updated to a slightly newer, highly compatible version)
-torch==2.3.1
-torchvision==0.18.1
-torchaudio==2.3.1
+# PyTorch (Using a version the log says is available for Python 3.13)
+torch==2.5.0
+torchvision
+torchaudio
 
 # Transformers and Hugging Face ecosystem
 transformers
@@ -17,7 +17,7 @@ huggingface-hub
 safetensors
 tokenizers
 
-# TensorFlow (Let pip find a compatible version)
+# TensorFlow
 tensorflow
 
 # PyTorch Lightning
