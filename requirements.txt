@@ -7,6 +7,8 @@ Pillow
 requests
 
 # PyTorch (A stable version for Python 3.11)
+
+tensorflow==2.10.0
 torch==2.3.1
 torchvision
 torchaudio
@@ -17,8 +19,6 @@ huggingface-hub
 safetensors
 tokenizers
 
-# Explicitly pin TensorFlow to a modern, stable version
-tensorflow==2.16.1
 
 # PyTorch Lightning
 pytorch-lightning
