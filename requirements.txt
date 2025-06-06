@@ -1,28 +1,11 @@
-# Use PyTorch's official index for reliable CPU builds
---extra-index-url https://download.pytorch.org/whl/cpu
+# Core dependencies to match your local environment
+streamlit==1.44.1
+Pillow==11.1.0
 
-# Streamlit and core dependencies
-streamlit
-Pillow
-requests
-
-# PyTorch (A stable version for Python 3.11)
-
+# TensorFlow to match the exact version you used to save the models
 tensorflow==2.10.0
-torch==2.3.1
-torchvision
-torchaudio
 
-# Transformers and Hugging Face ecosystem
-transformers
-huggingface-hub
-safetensors
-tokenizers
-
-
-# PyTorch Lightning
-pytorch-lightning
-
-# Common numerical and utility libraries
-pandas
-PyYAML
+# Common numerical and utility libraries (pinned to your local versions)
+numpy==1.23.5
+pandas==2.2.3
+PyYAML==6.0.2
