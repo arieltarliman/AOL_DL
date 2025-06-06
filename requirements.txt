@@ -1,6 +1,6 @@
-# Core dependencies to match your local environment
-streamlit==1.44.1
-Pillow==11.1.0
+# Core dependencies with compatible versions
+streamlit==1.22.0
+Pillow==9.5.0
 
 # TensorFlow to match the exact version you used to save the models
 tensorflow==2.10.0
@@ -8,4 +8,4 @@ tensorflow==2.10.0
 # Common numerical and utility libraries (pinned to your local versions)
 numpy==1.23.5
 pandas==2.2.3
-PyYAML==6.0.2
+PyYAML==6.0.1
